@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #74ebd5, #9face6);
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Button Styles */
+#start-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px #d44117;
+    transition: transform 0.2s;
+}
+
+#start-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px #d44117;
+}
+
+#start-button:hover {
+    background-color: #e64a19;
+}
+
+/* Difficulty Dropdown Styles */
+#difficulty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#difficulty-select {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#difficulty-select:hover {
+    background-color: #5a6268;
+}
+
+/* Difficulty Display Styles */
+#difficulty-display {
+    font-size: 1.2em;
+    color: #333;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Grid Styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.square:hover {
+    background-color: #dcdcdc;
+}
+
+.mole {
+    background: url('mole.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Score and Timer */
+#score, #time-left {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Hide the button dynamically */
+#start-button.hidden {
+    display: none;
+}
