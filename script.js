@@ -37,6 +37,14 @@ squares.forEach(square => {
       result++;
       scoreDisplay.textContent = result;
       hitPosition = null;
+    } else {
+      // End the game if a wrong square is clicked
+      clearInterval(timerId);
+      clearInterval(countDownTimerId);
+      alert(`GAME OVER! You clicked the wrong box. Your final score is ${result}`);
+      startButton.textContent = 'Restart Game';
+      startButton.style.display = 'inline-block'; // Show the button
+      difficultyDisplay.style.display = 'none'; // Hide difficulty display
     }
   });
 });
